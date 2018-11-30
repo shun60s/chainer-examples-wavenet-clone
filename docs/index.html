@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WaveNet</title>
+<meta name="description" content="chainer-Examples-WaveNet Colaboratory experiment." />
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-lg px-3 my-5 markdown-body">
+<h1>WaveNet</h1>
+
+<h2>Abstract  </h2>
+
+<p>This is a clone of <a href="https://github.com/chainer/chainer/tree/master/examples/wavenet">Chainer-Examples-WaveNet</a> and an experiment on Google Colaboratory. <br /></p>
+
+<p><a href="https://github.com/shun60s/chainer-examples-wavenet-clone">github repository</a><br /></p>
+
+<h2>Details of Operation  </h2>
+
+<p>Please see the document "Synthesize_Human_Speech_with_WaveNet" in the docs folder. That's a softcopy of web of chainer-colab-notebook, wavenet in the reference.<br /></p>
+
+<h2>Experiment on Google Colaboratory  </h2>
+
+<p>Chainer-colab-notebook, Synthesize Human Speech with WaveNet, using CSTR VCTK Corpus.<br />
+Following is Loss and Accuray vs iteration, around 10 hours computation, 7 epochs.<br /></p>
+
+<img src="loss.png" alt="loss" ><br />
+<img src="accuracy.png" alt="accuaracy" ><br />
+
+<p>Accuracy is still too low (loss is still high), if without conditioning, waveform generation will fail.<br /></p>
+
+<h2>Samples  </h2>
+
+<p>In the samples folder, there are original and generated wav files, and a model file (a snapshot).
+Suffix of snapshot_iter shows iteration number.
+Original wav are some wav of Pannous, english digits. (Please see reference link.)<br />
+When you generate using this model file,
+You should specify --n_loop 2 as generate.py arrangement, due to Chainer-colab-notebook wavenet n_loop is 2.<br /></p>
+
+<p><img src="compare_zero.png" alt="zero" ><br /></p>
+
+<p>At this iteration, generated waveform is still dirty than original human speech waveform.<br /></p>
+
+<p><img src="compare_nine.png" alt="nine" ><br /></p>
+
+<p>Athough generated waveform from iteration only 8000, it can hear some reverberation of utterance /nine/(=digit 9).<br />
+It's may conditoning trick !?<br /></p>
+
+<h2>Reference  </h2>
+
+<ul>
+<li><a href="https://chainer-colab-notebook.readthedocs.io/ja/latest/notebook/official_example/wavenet.html">chainer-colab-notebook, Synthesize Human Speech with WaveNet</a></li>
+<li><a href="https://github.com/chainer/chainer/tree/master/examples/wavenet">chainer-examples-wavnet</a></li>
+<li><a href="http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html">CSTR VCTK Corpus</a></li>
+<li><a href="https://github.com/AKBoles/Deep-Learning-Speech-Recognition/blob/master/Pannous-Walkthrough.md">wav of Pannous, Description</a
+</li></ul>
+
+<h2>License  </h2>
+
+Regarding to Chainer, please see the LICENSE-chainer.txt in the docs folder.<br />
+
+<br />
+<br />
+<br />
+
+
+</div>
+</body>
+</html>

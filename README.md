@@ -13,7 +13,7 @@ Please see the document "Synthesize_Human_Speech_with_WaveNet" in the docs folde
 ## Experiment on Google Colaboratory  
 
 Chainer-colab-notebook, Synthesize Human Speech with WaveNet, using CSTR VCTK Corpus.  
-Following is Loss and Accuray vs iteration, around 10 hours computation, 7 epochs.  
+Following is Loss and Accuray vs iteration, around 11 hours computation, 7 epochs.  
 
 ![loss](docs/loss.png)  
 ![accuaracy](docs/accuracy.png)  
@@ -22,7 +22,7 @@ Accuracy is still too low (loss is still high), if without conditioning, wavefor
 
 ## Samples  
 
-In the samples folder, there are original and generated wav files, and a model file (a snapshot).
+In the samples folder, there are original and generated wav files, and model file (a snapshot).
 Suffix of snapshot_iter shows iteration number.
 Original wav are some wav of Pannous, english digits. (Please see reference link.)  
 When you generate using this model file,

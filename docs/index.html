@@ -24,9 +24,12 @@
 <h2>Experiment on Google Colaboratory  </h2>
 
 <p>Chainer-colab-notebook, Synthesize Human Speech with WaveNet, using CSTR VCTK Corpus.<br />
-Following is Loss and Accuray vs iteration, around 11 hours computation, 7 epoch.<br /></p>
+Following is Loss and Accuray vs iteration, around 20 hours computation, 12 epoch.<br /></p>
+
 
 <img src="loss.png" alt="loss" ><br />
+<p>At iteration 57000, there is unusual drop shape, it causes resume re-start, due to Colaboratory time limit.<br />
+</p>
 <img src="accuracy.png" alt="accuaracy" ><br />
 
 <p>Accuracy is still too low (loss is still high), if without conditioning, waveform generation will fail.<br /></p>

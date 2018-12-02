@@ -16,7 +16,7 @@ from utils import Preprocess
 
 
 parser = argparse.ArgumentParser(description='Chainer example: WaveNet')
-parser.add_argument('--batchsize', '-b', type=int, default=4,
+parser.add_argument('--batchsize', '-b', type=int, default=3,  # change from 4 to 2 memory over
                     help='Numer of audio clips in each mini-batch')
 parser.add_argument('--length', '-l', type=int, default=7680,
                     help='Number of samples in each audio clip')

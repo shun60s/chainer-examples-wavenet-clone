@@ -13,7 +13,7 @@ Please see the document "Synthesize_Human_Speech_with_WaveNet" in the docs folde
 ## Experiment on Google Colaboratory  
 
 Chainer-colab-notebook, Synthesize Human Speech with WaveNet, using CSTR VCTK Corpus.  
-Following is Loss and Accuray vs iteration, around 11 hours computation, 7 epochs.  
+Following is Loss and Accuray vs iteration, around 11 hours computation, 7 epoch.  
 
 ![loss](docs/loss.png)  
 ![accuaracy](docs/accuracy.png)  
@@ -30,11 +30,11 @@ You should specify --n_loop 2 as generate.py arrangement, due to Chainer-colab-n
 
 ![zero](docs/compare_zero.png)  
 
-At this iteration, generated waveform is still dirty than original human speech waveform.  
+At this iteration 57000 (7 epoch), generated waveform is still dirty than original human speech waveform.  
 
 ![nine](docs/compare_nine.png)  
 
-Athough generated waveform from iteration only 8000, it can hear some reverberation of utterance /nine/(=digit 9).  
+Athough generated waveform from iteration only 8000 (1 epcoh), it can hear some reverberation of utterance /nine/(=digit 9).  
 It's may conditoning trick !?  
 
 ## Reference  
@@ -43,6 +43,7 @@ It's may conditoning trick !?
 - [chainer-examples-wavnet](https://github.com/chainer/chainer/tree/master/examples/wavenet)
 - [CSTR VCTK Corpus](http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html)
 - [wav of Pannous, Description](https://github.com/AKBoles/Deep-Learning-Speech-Recognition/blob/master/Pannous-Walkthrough.md)
+- [receptive field width, calculation method, by musyoku](https://github.com/musyoku/wavenet/blob/master/train_audio/train.py)
 
 ## License  
 

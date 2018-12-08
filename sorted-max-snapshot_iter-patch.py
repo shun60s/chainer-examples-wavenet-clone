@@ -26,4 +26,4 @@ model_files = sorted(glob.glob(out_dir + '/snapshot_iter_*'))
 if len(model_files) > 0:
     resume = [x for x in model_files if len(x)== len(max(model_files, key=len))] [-1] # <--- change
     print('model: {}'.format(resume))
-    # chainer.serializers.load_npz(resume, trainer)
+    chainer.serializers.load_npz(resume, trainer)
